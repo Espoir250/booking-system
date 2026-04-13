@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBook | Doctor Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="doctor-dashboard">
+  <header class="site-header compact">
+    <a class="brand" href="index.html">MediBook</a>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="doctors.html">Directory</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Switch Account</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-shell">
+    <aside class="dashboard-sidebar">
+      <h2>Doctor Panel</h2>
+      <a href="doctor-dashboard.html">Appointments</a>
+      <a href="#availability">Availability</a>
+    </aside>
+    <section class="dashboard-main">
+      <div class="dashboard-top">
+        <div>
+          <span class="eyebrow">Doctor Workspace</span>
+          <h1>Manage your profile and bookings</h1>
+        </div>
+        <div class="stats-inline">
+          <article><strong id="doctor-total-bookings">0</strong><span>Total Bookings</span></article>
+          <article><strong id="doctor-pending-bookings">0</strong><span>Pending</span></article>
+        </div>
+      </div>
+
+      <section class="grid-two">
+        <div class="card">
+          <h2>Update availability</h2>
+          <form id="availability-form" class="stack-form">
+            <label>Day
+              <select name="day" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+            </label>
+            <label>Time Slot<input type="text" name="slot" placeholder="09:00 AM - 09:30 AM" required></label>
+            <button class="btn btn-primary" type="submit">Add Slot</button>
+          </form>
+          <div id="doctor-availability-list" class="pill-wrap"></div>
+        </div>
+
+        <div class="card">
+          <h2>Doctor profile</h2>
+          <div id="doctor-profile-summary"></div>
+        </div>
+      </section>
+
+      <section class="table-card">
+        <h2>Booked appointments</h2>
+        <div id="doctor-appointments"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

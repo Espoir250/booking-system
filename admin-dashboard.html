@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBook | Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="admin-dashboard">
+  <header class="site-header compact">
+    <a class="brand" href="index.html">MediBook</a>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="doctors.html">Directory</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Switch Account</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-shell">
+    <aside class="dashboard-sidebar">
+      <h2>Admin Panel</h2>
+      <a href="admin-dashboard.html">Overview</a>
+      <a href="#users">Users</a>
+      <a href="#clinics">Clinics</a>
+    </aside>
+    <section class="dashboard-main">
+      <div class="dashboard-top">
+        <div>
+          <span class="eyebrow">Admin Overview</span>
+          <h1>Platform monitoring and management</h1>
+        </div>
+      </div>
+
+      <section class="stats-grid">
+        <article class="card"><strong id="admin-total-users">0</strong><span>Total Users</span></article>
+        <article class="card"><strong id="admin-total-doctors">0</strong><span>Doctors</span></article>
+        <article class="card"><strong id="admin-total-patients">0</strong><span>Patients</span></article>
+        <article class="card"><strong id="admin-total-appointments">0</strong><span>Appointments</span></article>
+      </section>
+
+      <section class="grid-two">
+        <div class="table-card" id="users">
+          <h2>Manage users</h2>
+          <div id="admin-users-table"></div>
+        </div>
+        <div class="table-card" id="clinics">
+          <h2>Manage clinics</h2>
+          <div id="admin-clinics-list"></div>
+        </div>
+      </section>
+
+      <section class="table-card">
+        <h2>Recent appointments</h2>
+        <div id="admin-appointments-table"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

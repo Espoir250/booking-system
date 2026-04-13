@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBook | Doctors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="doctors">
+  <header class="site-header compact">
+    <a class="brand" href="index.html">MediBook</a>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-banner">
+      <div>
+        <span class="eyebrow">Doctor Directory</span>
+        <h1>Find the right specialist near you</h1>
+      </div>
+      <form id="doctor-filter-form" class="filter-bar">
+        <input type="text" name="specialization" placeholder="Specialization">
+        <input type="text" name="clinic" placeholder="Hospital/Clinic">
+        <input type="text" name="location" placeholder="Location">
+        <button class="btn btn-primary" type="submit">Filter</button>
+      </form>
+    </section>
+
+    <section>
+      <div id="doctor-results" class="doctor-grid"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

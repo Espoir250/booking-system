@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBook | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="register">
+  <header class="site-header compact">
+    <a class="brand" href="index.html">MediBook</a>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-secondary" href="login.html">Login</a>
+    </nav>
+  </header>
+  <main class="auth-layout auth-layout-page">
+    <section class="auth-panel intro-panel">
+      <a class="brand" href="index.html">MediBook</a>
+      <h1>Create your account</h1>
+      <p>Register as a patient or doctor and start managing appointments in a structured way.</p>
+    </section>
+    <section class="auth-panel form-panel">
+      <h2>Register</h2>
+      <form id="register-form" class="stack-form">
+        <label>Full Name<input type="text" name="name" placeholder="Jane Doe" required></label>
+        <label>Email<input type="email" name="email" placeholder="jane@example.com" required></label>
+        <label>Password<input type="password" name="password" placeholder="Choose a password" required></label>
+        <label>Register as
+          <select name="role" id="register-role" required>
+            <option value="patient">Patient</option>
+            <option value="doctor">Doctor</option>
+          </select>
+        </label>
+        <div id="doctor-fields" class="conditional-fields hidden">
+          <label>Specialization<input type="text" name="specialization" placeholder="Dentist"></label>
+          <label>Hospital/Clinic<input type="text" name="clinic" placeholder="Sunrise Clinic"></label>
+          <label>Location<input type="text" name="location" placeholder="Kigali"></label>
+          <label>Years of Experience<input type="number" name="experience" min="1" placeholder="7"></label>
+        </div>
+        <button class="btn btn-primary" type="submit">Create Account</button>
+      </form>
+      <p class="auth-switch">Already registered? <a href="login.html">Login here</a></p>
+    </section>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediBook | Medical Excellence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home" class="med-style-home">
+  <header class="med-topbar">
+    <div class="med-topbar-inner">
+      <a class="brand med-brand" href="index.html">MEDI<span>BOOK</span></a>
+      <div class="med-contact-row">
+        <article>
+          <span>Emergency</span>
+          <strong>+250783031696</strong>
+        </article>
+        <article>
+          <span>Work Hours</span>
+          <strong>09:00 - 20:00</strong>
+        </article>
+        <article>
+          <span>Location</span>
+          <strong>kk 41st</strong>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <header class="med-navbar">
+    <div class="med-navbar-inner">
+      <nav class="med-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="med-actions">
+        <a href="login.html">Login</a>
+        <a class="btn btn-secondary" href="register.html">Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="med-hero">
+      <div class="med-hero-inner">
+        <div class="med-hero-copy">
+          <span class="eyebrow">Caring For Life</span>
+          <h1>Leading the Way in Medical Excellence</h1>
+          <p>Find trusted doctors, compare schedules, and book appointments with confidence from one modern care platform.</p>
+          <div class="hero-actions hero-actions-wide">
+            <a class="btn btn-primary" href="doctors.html">Our Services</a>
+            <a class="btn btn-secondary" href="register.html">Join as Doctor</a>
+          </div>
+          <div class="hero-stats med-hero-stats">
+            <article><strong id="stat-doctors">0</strong><span>Doctors</span></article>
+            <article><strong id="stat-clinics">0</strong><span>Clinics</span></article>
+            <article><strong id="stat-bookings">0</strong><span>Appointments</span></article>
+          </div>
+        </div>
+        <div class="med-hero-image-wrap">
+          <img class="med-hero-image" src="assets/images/home/hero-doctor.jpg" alt="Black doctor smiling in white coat">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="med-welcome section">
+      <div class="section-heading">
+        <span class="eyebrow">Welcome To MediBook</span>
+        <h2>A great place to receive care</h2>
+      </div>
+      <div class="med-welcome-grid">
+        <div>
+          <p>MediBook is designed to bring patients, doctors, and administrators into one smooth system where care is easier to access, easier to schedule, and easier to manage.</p>
+          <p>Patients can search by specialization, clinic, and location. Doctors can manage availability. Admins can monitor the whole platform with clear visibility.</p>
+          <a class="med-link-arrow" href="about.html">Learn more</a>
+        </div>
+        <img src="assets/images/home/about-team.jpg" alt="Medical team standing together">
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading center-heading">
+        <span class="eyebrow">Care You Can Believe In</span>
+        <h2>Our Services</h2>
+      </div>
+      <div class="med-services-layout">
+        <div class="med-service-tabs">
+          <article class="med-tab active">Book Appointment</article>
+          <article class="med-tab">Search Doctors</article>
+          <article class="med-tab">Track Schedule</article>
+          <article class="med-tab">Read Reviews</article>
+        </div>
+        <div class="card med-service-copy">
+          <h3>A passion for putting patients first</h3>
+          <ul class="med-check-list">
+            <li>Search doctors by clinic and location</li>
+            <li>Compare experience, ratings, and specialties</li>
+            <li>See only available time slots</li>
+            <li>Prevent double booking automatically</li>
+            <li>Manage appointments from each dashboard</li>
+            <li>Keep communication simple and clear</li>
+          </ul>
+          <p>The system gives patients a direct path from discovery to booking while helping doctors and clinics stay organized with real appointment visibility.</p>
+        </div>
+        <div class="med-service-images">
+          <img src="assets/images/home/service-consultation.jpg" alt="Doctor speaking with patient">
+          <img src="assets/images/home/service-team.jpg" alt="Doctors posing together">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading center-heading">
+        <span class="eyebrow">Always Caring</span>
+        <h2>Our Specialties</h2>
+      </div>
+      <div class="med-specialties-grid">
+        <article class="med-specialty-card">Neurology</article>
+        <article class="med-specialty-card featured">Dentist</article>
+        <article class="med-specialty-card">Cardiology</article>
+        <article class="med-specialty-card">Ophthalmology</article>
+        <article class="med-specialty-card">Pediatrics</article>
+        <article class="med-specialty-card">Orthopedics</article>
+        <article class="med-specialty-card">Dermatology</article>
+        <article class="med-specialty-card">Gynecology</article>
+      </div>
+    </section>
+
+    <section class="med-booking-band">
+      <div class="med-booking-overlay">
+        <div class="med-booking-copy">
+          <span class="eyebrow">Appointment</span>
+          <h2>Book an Appointment</h2>
+          <p>Use the quick finder below, then continue to the doctor directory for full profiles, ratings, and live availability.</p>
+        </div>
+        <div class="med-booking-form card">
+          <form id="home-search-form" class="stack-form">
+            <label>Specialization<input type="text" name="specialization" placeholder="Dentist, Cardiologist"></label>
+            <label>Clinic<input type="text" name="clinic" placeholder="Sunrise Clinic"></label>
+            <label>Location<input type="text" name="location" placeholder="Kigali, Nairobi"></label>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading center-heading">
+        <span class="eyebrow">Trusted Care</span>
+        <h2>Our Doctors</h2>
+      </div>
+      <div class="med-doctors-preview">
+        <article class="med-doctor-preview">
+          <img src="assets/images/doctors/samuel-okoro.jpg" alt="Black male neurologist in white coat">
+          <div>
+            <h3>Dr. Samuel Okoro</h3>
+            <p>Neurologist</p>
+            <a href="doctor-profile.html?id=d3">View Profile</a>
+          </div>
+        </article>
+        <article class="med-doctor-preview">
+          <img src="assets/images/doctors/musa-karekezi.jpg" alt="Black male dermatologist smiling">
+          <div>
+            <h3>Dr. Musa Karekezi</h3>
+            <p>Dermatologist</p>
+            <a href="doctor-profile.html?id=d4">View Profile</a>
+          </div>
+        </article>
+        <article class="med-doctor-preview">
+          <img src="assets/images/doctors/aline-uwimana.jpg" alt="Black female gynecologist smiling">
+          <div>
+            <h3>Dr. Aline Uwimana</h3>
+            <p>Gynecologist</p>
+            <a href="doctor-profile.html?id=d5">View Profile</a>
+          </div>
+        </article>
+        <article class="med-doctor-preview">
+          <img src="assets/images/doctors/daniel-ncube.jpg" alt="Black male orthopedist in consultation attire">
+          <div>
+            <h3>Dr. Daniel Ncube</h3>
+            <p>Orthopedist</p>
+            <a href="doctor-profile.html?id=d6">View Profile</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading center-heading">
+        <span class="eyebrow">Better Information, Better Health</span>
+        <h2>News</h2>
+      </div>
+      <div class="med-news-grid">
+        <article class="med-news-card">
+          <img src="assets/images/news/news-one.jpg" alt="Doctor consultation">
+          <div>
+            <h3>Why online appointment booking improves patient flow</h3>
+            <p>Digital scheduling reduces waiting confusion and helps clinics better match doctors to patients.</p>
+          </div>
+        </article>
+        <article class="med-news-card">
+          <img src="assets/images/news/news-two.jpg" alt="Doctor assisting patient">
+          <div>
+            <h3>How specialists can organize availability more efficiently</h3>
+            <p>Structured time-slot planning makes rescheduling easier and prevents overlapping bookings.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section">
+      <div class="section-heading center-heading">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <article class="card contact-card">
+          <h2>Emergency</h2>
+          <p><a href="tel:+250783031696">+250783031696</a></p>
+        </article>
+        <article class="card contact-card featured-contact">
+          <h2>Location</h2>
+          <p>kk 41st</p>
+        </article>
+        <article class="card contact-card">
+          <h2>Email</h2>
+          <p><a href="mailto:medbooking20@gmail.com">medbooking20@gmail.com</a></p>
+        </article>
+        <article class="card contact-card">
+          <h2>Working Hours</h2>
+          <p>Monday - Sunday, 09:00 - 20:00</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="med-footer">
+    <div class="med-footer-grid">
+      <div>
+        <a class="brand med-brand" href="index.html">MEDI<span>BOOK</span></a>
+        <p>Leading the way in medical scheduling, booking, and patient care coordination.</p>
+      </div>
+      <div>
+        <h3>Important Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>+250783031696</p>
+        <p>medbooking20@gmail.com</p>
+        <p>kk 41st</p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <div class="med-newsletter">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn btn-secondary" type="button">Send</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
